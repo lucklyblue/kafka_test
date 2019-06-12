@@ -17,7 +17,7 @@ import java.util.*;
  */
 public class KafkaToConsumer {
     //初始化参数
-    private static Consumer<String, String> consumer = new KafkaConsumer<String, String>(PropertiesUtil.getProperties("/consumer.properties"));
+    public static final Consumer<String, String> consumer = new KafkaConsumer<String, String>(PropertiesUtil.getProperties("/consumer.properties"));
 
     /**
     * @author wanchen.chen
